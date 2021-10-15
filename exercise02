@@ -1,0 +1,15 @@
+# 2. Пользователь вводит время в секундах.
+# Переведите время в часы, минуты и секунды и выведите в формате чч:мм:сс.
+# Используйте форматирование строк.
+
+time_sec = int(input("Введите время в секундах >>>"))
+
+hours = time_sec // 3600
+
+ostatok_ot_chasov = time_sec % 3600
+
+minutes = ostatok_ot_chasov // 60
+
+seconds = ostatok_ot_chasov % 60
+
+print(f"Local time now is {hours}:{minutes}:{seconds}")
