@@ -1,0 +1,27 @@
+# 1. Поработайте с переменными, создайте несколько, выведите на экран,
+# запросите у пользователя несколько чисел и строк
+# и сохраните в переменные, выведите на экран.
+
+username = "Mikhail"
+
+usersoname = "Davydov"
+
+user_nickname = "Mike"
+
+print ("Имя", username,)
+
+print("Фамилия", usersoname)
+
+print("Псевдоним", user_nickname)
+
+age = int(input("Введите Ваш возраст >>>"))
+
+phone_number = int(input("Введите Ваш номер телефона >>>"))
+
+codeword = str(input("Укажите кодовое слово >>>"))
+
+print ("Возраст", age)
+
+print("Номер телефона", phone_number)
+
+print("Кодовое слово", codeword)
