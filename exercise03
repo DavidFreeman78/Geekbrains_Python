@@ -1,0 +1,12 @@
+# 3. Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn.
+# Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
+
+Number_n = int(input("Введите число N >>>"))
+
+Number_n1 = Number_n * 11
+
+Number_n2 = Number_n1 * 10 + Number_n
+
+total = Number_n + Number_n1 + Number_n2
+
+print(f"{Number_n} + {Number_n1} + {Number_n2} = {total}")
