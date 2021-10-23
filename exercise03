@@ -1,12 +1,26 @@
-# 3. Узнайте у пользователя число n. Найдите сумму чисел n + nn + nnn.
-# Например, пользователь ввёл число 3. Считаем 3 + 33 + 333 = 369.
+# 3. Пользователь вводит месяц в виде целого числа от 1 до 12.
+# Сообщить к какому времени года относится месяц (зима, весна, лето, осень).
+# Напишите решения через list и через dict.
 
-Number_n = int(input("Введите число N >>>"))
-
-Number_n1 = Number_n * 11
-
-Number_n2 = Number_n1 * 10 + Number_n
-
-total = Number_n + Number_n1 + Number_n2
-
-print(f"{Number_n} + {Number_n1} + {Number_n2} = {total}")
+number = int(input("Введите месяц года, указав целое число от 1 до 12: "))
+if number <= 12 and number >= 1:
+    month_dict = {1: 'Январь (Зима)',
+                  2: 'Февраль (Зима)',
+                  3: 'Март (Весна)',
+                  4: 'Апрель (Весна)',
+                  5: 'Май (Весна)',
+                  6: 'Июнь (Лето)',
+                  7: 'Июль (Лето)',
+                  8: 'Август (Лето)',
+                  9: 'Сентябрь (Осень)',
+                  10: 'Октябрь (Осень)',
+                  11: 'Ноябрь (Осень)',
+                  12: 'Декабрь (Зима)'}
+    month_list = list(month_dict.values())
+    for i, el in enumerate(month_list):
+        if i == number-1:
+            print(f"Month from list is {month_list[i]}")
+            break
+    print(f"Month from dict is {month_dict[number]}")
+else:
+    print("Вы не соблюдаете условие ввода")
